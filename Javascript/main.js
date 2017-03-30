@@ -1,17 +1,15 @@
 $(document).ready(function() {
   $('#title').fadeOut(0);
-  $('#title').fadeIn('slow');
-  $('#mosaicbackground').fadeTo('slow', 1, function() {
-      // Animation complete.
-    });
+  $('#title').fadeIn(2000);
+  
+  $('#menu').fadeOut(0);
+  $('#menu').fadeIn(2000);
+
   $('#socialdropdown').slideUp(0);
   $('#listendropdown').slideUp(0);
   $('#contactdropdown').slideUp(0);
   $('#storedropdown').slideUp(0);
   
-  // $('#socialbar').click(function() {
-  //   $('#socialdropdown').slideToggle('slow');
-  // });
   
   $("#social").hover(function() {
     $('#socialdropdown').stop(true, false).slideDown('slow');
@@ -36,49 +34,49 @@ $(document).ready(function() {
   }, function() {
     $('#storedropdown').stop(true, false).slideUp('slow');
   });
-  $('#00').flip({
-    axis: 'y',
-    trigger: 'hover'
-  });
+  // $('#00').flip({
+  //   axis: 'y',
+  //   trigger: 'hover'
+  // });
   
-  $('#01').flip({
-    axis: 'y',
-    trigger: 'hover'
-  });
+  // $('#01').flip({
+  //   axis: 'y',
+  //   trigger: 'hover'
+  // });
   
-  $('#02').flip({
-    axis: 'y',
-    trigger: 'hover'
-  });
+  // $('#02').flip({
+  //   axis: 'y',
+  //   trigger: 'hover'
+  // });
   
-  $('#03').flip({
-    axis: 'y',
-    trigger: 'hover'
-  });
+  // $('#03').flip({
+  //   axis: 'y',
+  //   trigger: 'hover'
+  // });
   
-  $('#04').flip({
-    axis: 'y',
-    trigger: 'hover'
-  });
+  // $('#04').flip({
+  //   axis: 'y',
+  //   trigger: 'hover'
+  // });
   
-  $('#05').flip({
-    axis: 'y',
-    trigger: 'hover'
-  });
+  // $('#05').flip({
+  //   axis: 'y',
+  //   trigger: 'hover'
+  // });
 
-  var navHeight = $( window ).height() - 70;
+//   var navHeight = $( window ).height() - 70;
   
   
-    $(window).bind('scroll', function() {
-        if ($(window).scrollTop() > navHeight) {
-				  $('#menu').addClass('fixed');
-		    }
+//     $(window).bind('scroll', function() {
+//         if ($(window).scrollTop() > navHeight) {
+// 				  $('#menu').addClass('fixed');
+// 		    }
 		    
-        else {
-  			  $('#menu').removeClass('fixed');
-        }
+//         else {
+//   			  $('#menu').removeClass('fixed');
+//         }
         
-     });
+//     });
 
 });
 
@@ -101,3 +99,5 @@ function fadeIn(el) {
 }
 
 fadeIn(el);
+
+
