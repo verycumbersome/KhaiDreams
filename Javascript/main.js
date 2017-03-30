@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  // $('#overlay').fadeOut(2000);
+  // $('#overlay').fadeOut(2000);
+  $('#overlay').css('opacity', '0');
+  $('#overlay').css('z-index', '-1');
+  
+  
+  
   $('#title').fadeOut(0);
   $('#title').fadeIn(2000);
   
@@ -34,36 +41,10 @@ $(document).ready(function() {
   }, function() {
     $('#storedropdown').stop(true, false).slideUp('slow');
   });
-  // $('#00').flip({
-  //   axis: 'y',
-  //   trigger: 'hover'
-  // });
   
-  // $('#01').flip({
-  //   axis: 'y',
-  //   trigger: 'hover'
-  // });
-  
-  // $('#02').flip({
-  //   axis: 'y',
-  //   trigger: 'hover'
-  // });
-  
-  // $('#03').flip({
-  //   axis: 'y',
-  //   trigger: 'hover'
-  // });
-  
-  // $('#04').flip({
-  //   axis: 'y',
-  //   trigger: 'hover'
-  // });
-  
-  // $('#05').flip({
-  //   axis: 'y',
-  //   trigger: 'hover'
-  // });
-
+  $("#title").animate({
+    
+  });
 //   var navHeight = $( window ).height() - 70;
   
   

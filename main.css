@@ -3,6 +3,10 @@
 	src: url('Fonts/Garamond/AGaramondPro-Regular.otf');
 }
 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
 body{
 	font-family: "Adobe Garamond";
   /*background-size:     cover;               */
@@ -19,28 +23,129 @@ body{
 
 
 h1{
-  z-index: -6;
   font-size: 11vh;
 	letter-spacing: 3px;
+	color:#F1Efea;
 	/*white-space: nowrap;*/
 	
 }
 
 
 #title{
+    position: relative;
     margin: auto;
-    height: auto;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     width: 82%;
+    height: auto;
     border: 2px solid black;
     text-align: center;
-    /*background-color: #F1Efea;*/
-    /*background-size:     cover;               */
-    /*background-repeat:   no-repeat;*/
-    /*background-position: center center;*/
-    /*background-image:  ;*/
-    
+    color:#F1Efea;
 }
+
+/*alternating background*/
+
+/* Basic background image styling. */
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: inherit;
+	color: inherit;
+	/*top: 0;*/
+	/*left: 0;*/
+	transition: opacity 5s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+	background-image: url('/images/Wallpapers/Whisper-of-the-Heart-whisper-of-the-heart-30619610-1920-1080.jpg');
+	z-index: -8;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('/images/Wallpapers/garden-of-words-fallen-leaves-flowers-rain-1920x1080-wallpaper.jpg');
+	z-index: -7;
+	opacity: 0;
+}
+
+.fourth-image {
+	background-image: url('/images/Wallpapers/605495.jpg');
+	z-index: -6;
+	opacity: 0;
+}
+
+.third-image{
+  background-image: url('/images/Wallpapers/Whisperoftheheartwallpaper.png');
+  z-index: -5;
+  opacity: 0;
+}
+
+.fifth-image {
+	background-image: url('/images/Wallpapers/6TG6qc6.jpg');
+	z-index: -4;
+	opacity: 0;
+}
+
+.sixth-image {
+	background-image: url('/images/Wallpapers/2utRmwZ.jpg');
+	z-index: -3;
+	opacity: 0;
+}
+
+.seventh-image {
+	background-image: url('/images/Wallpapers/only_yesterday_14.jpg');
+	z-index: -2;
+	opacity: 0;
+}
+
+.eigth-image {
+	background-image: url('/images/Wallpapers/tumblr_mo107yEaoS1sor8q8o8_1280.jpg');
+	z-index: -1;
+	opacity: 0;
+}
+
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+
+.fourth-image.show {
+	opacity: 1;
+}
+
+.fifth-image.show {
+	opacity: 1;
+}
+
+.sixth-image.show {
+	opacity: 1;
+}
+
+.seventh-image.show {
+	opacity: 1;
+}
+
+.eigth-image.show {
+	opacity: 1;
+}
+
+/*Menu*/
 
 #menu{
   font-size: 0;
@@ -53,11 +158,6 @@ h1{
   /*z-index: 0;*/
  
 }
-
-#mosaicsoundcloud {
-  z-index: 3;
-}
-
 
 .menuitem{
   font-size: 16pt;
@@ -80,84 +180,6 @@ h1{
 	top: 0; 
 	/*height: 70px; */
 	z-index: 2;
-}
-
-#mosaicbackground{
-  text-align: center;
-  margin: auto;
-  margin-top: 2.5%;
-  margin-bottom: 5%;
-  width: 82%;
-  height: auto;
-  font-size: 0pt;
-  /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
-  /*border: 2px black solid;*/
-  /*background: red;*/
-  overflow: scale;
-}
-
-.tile{
-  /*float: left;*/
-  position:relative;
-  display: inline-block;
-  width: 275pt;
-  height: 275pt;
-  /*border: black 1px solid;*/
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  overflow: hidden;
-}
-
-.tile:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-/*#mosaicbackground{*/
-/*  display: table;*/
-/*  margin: auto;*/
-/*  margin-top: 2.5%;*/
-/*  margin-bottom: 5%;*/
-/*  width: 82%;*/
-/*  height: auto;*/
-/*  font-size: 0;*/
-/*  text-align: center;*/
-  /*box-shadow: 0 5px 30px rgba(0,0,0,0.30), 0 5px 12px rgba(0,0,0,0.22);*/
-/*  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
-/*  opacity:0.0;*/
-/*  filter:alpha(opacity=0);*/
-/*  background-color: #99a3a3;*/
-/*}*/
-
-
-
-/*.tile{*/
-/*  font-size: 18px;*/
-/*  display: inline-block;*/
-/*  border: 1px solid black;*/
-/*  width: 272pt;*/
-/*  height: 272pt;*/
-/*  position: absolute;*/
-/*  vertical-align: top;*/
-  /*overflow: hidden;*/
-  /*float: right;*/
-/*}*/
-
-/*.center {*/
-/*  margin: auto;*/
-/*  width: 50%;*/
-/*  padding: 10px;*/
-/*}*/
-
-/*.card-1 {*/
-  /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
-  /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
-/*}*/
-
-/*.card-1:hover {*/
-/*  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
-/*}*/
-
-#tools_sketch{
-    position: fixed;
 }
 
 .bar {
@@ -184,7 +206,7 @@ h1{
   /*color: green;*/
 }
 
-.generic {
+.genericfa {
   display: inherit;
   font-size: 3vh;
   overflow: auto;
@@ -236,36 +258,44 @@ h1{
   color: white;
 }
 
-/*#email {*/
-/*  padding: 20px;*/
-/*}*/
-
 .fa:hover {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
-.overlay{
-    opacity:0.5;
-    background-color:#ccc;
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0px;
-    left:0px;
-    z-index:1000;
+/*Mosaic*/
+
+#mosaicbackground{
+  text-align: center;
+  margin: auto;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  width: 82%;
+  height: auto;
+  font-size: 0pt;
+  /*background: red;*/
+  overflow: scale;
 }
 
-.link{
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
+#mosaicsoundcloud {
+  z-index: 3;
 }
 
-footer{
-  float: left;
-  font-size: 10px;
+.tile{
+  /*float: left;*/
+  position:relative;
+  display: inline-block;
+  width: 275pt;
+  height: 275pt;
+  /*border: black 1px solid;*/
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  overflow: hidden;
+}
+
+.tile:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .over{
@@ -286,5 +316,31 @@ footer{
 .tile:hover  .over{
     opacity:1;
 }
+
+/*extra bits*/
+
+.overlay{
+    opacity:1;
+    background-color:#F1Efea;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    overflow: hidden;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+footer{
+  float: left;
+  font-size: 10px;
+}
+
 
 
