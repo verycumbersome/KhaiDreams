@@ -9,16 +9,14 @@
 
 body{
 	font-family: "Adobe Garamond";
-  /*background-size:     cover;               */
-  /*background-repeat:   no-repeat;*/
-  /*background-position: center center;*/
   text-align: center;
-  position: relative;
+  position: absolute;
   overflow: inherit;
-  background-color: #F1Efea;
+  /*background-color: #F1Efea;*/
+  /*background-image: url('images/artworks-000201096460-cry68y-t500x500.jpg');*/
   width: 100%;
   height: 100%;
-  
+
 }
 
 
@@ -26,7 +24,6 @@ h1{
   font-size: 11vh;
 	letter-spacing: 3px;
 	color:#F1Efea;
-	/*white-space: nowrap;*/
 	
 }
 
@@ -58,9 +55,7 @@ h1{
 	height: 100%;
 	margin: inherit;
 	color: inherit;
-	/*top: 0;*/
-	/*left: 0;*/
-	transition: opacity 5s ease-in-out;
+	transition: opacity 3s ease-in-out;
 }
 
 /* Styles for the specific images. */
@@ -148,25 +143,24 @@ h1{
 /*Menu*/
 
 #menu{
+  left: 0;
+  right: 0;
   font-size: 0;
   width: 82%;
   height: auto;
   margin: auto;
   margin-top: 2.5%;
   border: 2px solid black;
-  /*overflow: hidden;*/
-  /*z-index: 0;*/
  
 }
 
 .menuitem{
+  padding-top: 2px;
   font-size: 16pt;
   display: inline-block;
   vertical-align: top;
   width: 25%;
-  /*height: auto;*/
   white-space: nowrap;
-  /*margin-bottom: 0;*/
   box-shadow: 0 0px 0px rgba(0,0,0,0.12), 0 0px 0px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -178,7 +172,6 @@ h1{
 .fixed {
   position: fixed; 
 	top: 0; 
-	/*height: 70px; */
 	z-index: 2;
 }
 
@@ -193,8 +186,6 @@ h1{
   /*width: 100%;*/
   height: auto;
   max-height: 100%;
-  /*margin-top: 0;*/
-  /*margin-bottom: 0;*/
   /*background: yellow;*/
 }
 
@@ -207,11 +198,9 @@ h1{
 }
 
 .genericfa {
-  display: inherit;
-  font-size: 3vh;
-  overflow: auto;
-  padding: 10%;
   width: 80.1%;
+  padding: 10%;
+  white-space: pre-wrap;
   background-color: #99a3a3;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -283,11 +272,12 @@ h1{
 }
 
 .tile{
-  /*float: left;*/
   position:relative;
   display: inline-block;
-  width: 275pt;
-  height: 275pt;
+  width: 33.333%;
+  height: 33.333%;
+  /*width: 275pt;*/
+  /*height: 275pt;*/
   /*border: black 1px solid;*/
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -338,7 +328,6 @@ h1{
 }
 
 footer{
-  float: left;
   font-size: 10px;
 }
 
