@@ -201,6 +201,8 @@ h1{
   padding: 10%;
   white-space: pre-wrap;
   background-color: #99a3a3;
+  color: white;
+  font-size: 2vh;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
