@@ -77,11 +77,11 @@ h1{
 	opacity: 0;
 }
 
-.third-image{
-  background-image: url('/images/Wallpapers/Whisperoftheheartwallpaper.png');
-  z-index: -5;
-  opacity: 0;
-}
+/*.third-image{*/
+/*  background-image: url('/images/Wallpapers/Whisperoftheheartwallpaper.png');*/
+/*  z-index: -5;*/
+/*  opacity: 0;*/
+/*}*/
 
 .fifth-image {
 	background-image: url('/images/Wallpapers/6TG6qc6.jpg');
@@ -89,11 +89,11 @@ h1{
 	opacity: 0;
 }
 
-.sixth-image {
-	background-image: url('/images/Wallpapers/2utRmwZ.jpg');
-	z-index: -3;
-	opacity: 0;
-}
+/*.sixth-image {*/
+/*	background-image: url('/images/Wallpapers/2utRmwZ.jpg');*/
+/*	z-index: -3;*/
+/*	opacity: 0;*/
+/*}*/
 
 .seventh-image {
 	background-image: url('/images/Wallpapers/only_yesterday_14.jpg');
@@ -259,7 +259,7 @@ h1{
   text-align: center;
   margin: auto;
   margin-top: 2.5%;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
   width: 82%;
   height: auto;
   font-size: 0pt;
