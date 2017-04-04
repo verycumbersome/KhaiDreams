@@ -14,10 +14,10 @@ $(document).ready(function() {
     
     $('#title').fadeOut(0);
     $('#menu').fadeOut(0);
-    $('#title').fadeIn(500);
-    $('#menu').fadeIn(500, function(){
+    $('#title').fadeIn(1000);
+    $('#menu').fadeIn(1000, function(){
       $(".tile").animate({opacity: '1'
-    }, 2000)
+    }, 1000)
     });
   });
   
