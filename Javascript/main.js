@@ -1,15 +1,4 @@
 $(document).ready(function() {
-  // $('#title').fadeOut(0);
-  // $('#menu').fadeOut(0);
-  
-  // $('#socialdropdown').slideUp(0);
-  // $('#listendropdown').slideUp(0);
-  // $('#contactdropdown').slideUp(0);
-  // $('#storedropdown').slideUp(0);
-  
-  // $('#overlay').css('opacity', '0');
-  // $('#overlay').css('z-index', '-1');
-  
   Pace.on('done', function() {
     $('#overlay').css('opacity', '0');
     $('#overlay').css('z-index', '-1');
@@ -18,11 +7,18 @@ $(document).ready(function() {
     $('#listendropdown').slideUp(0);
     $('#contactdropdown').slideUp(0);
     $('#storedropdown').slideUp(0);
-  
+
+    // $("body").fadeIn(5000, function() {
+    //   // $("mosaicbackground").fadeIn(2000);
+    // });
+    
     $('#title').fadeOut(0);
     $('#menu').fadeOut(0);
-    $('#title').fadeIn(2000);
-    $('#menu').fadeIn(2000);
+    $('#title').fadeIn(500);
+    $('#menu').fadeIn(500, function(){
+      $(".tile").animate({opacity: '1'
+    }, 2000)
+    });
   });
   
   
@@ -68,6 +64,7 @@ $(document).ready(function() {
 //     });
 
 });
+
 
 var el = document.getElementById("div1");
 
